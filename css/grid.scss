@@ -1,0 +1,26 @@
+//建立setup-grid混合器
+@mixin setup-grid($deviceName) {
+    @for $i from 1 through 12 {
+        .col-#{$deviceName}-#{$i} {
+            width: calc( 100% * #{$i} / 12);
+        }
+    }
+}
+
+//使用setup-grid混合器
+//手機板網格
+@include setup-grid('xs');
+//平板網格
+@media sceen and ( min-width:768px) {
+    @include setup-grid('sm');
+}
+
+//普通電腦網格
+@media sceen and ( min-width:992px) {
+    @include setup-grid('md');
+}
+
+//大螢幕網格
+@media sceen and ( min-width:1200px) {
+    @include setup-grid('lg');
+}

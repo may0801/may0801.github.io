@@ -1,22 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>蔡馥伃</title>
-</head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/iphone7css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
 
-<body>
-    <h1>蔡馥伃的第一個網頁</h1>
-    <a href="travel.html">
-        <p>作業一-食記(改成旅遊記)20170502</p>
-    </a>
-    <p>作業二-各人網頁demo草圖20170502</p>
-    <a href="iphone7.html">
-        <p>作業三-iPHONE手機20170506</p>
-    </a>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div class="container-fluid" style="background-image:url('images/top.jpg');color:#333;height:200px;">
+        <h1>May's House</h1>
+        <h2>css class hone work</h2>
+    </div>
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">May's House</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">遊記</a></li>
+                        <li><a href="#section2">iPhone</a></li>
+                        <li><a href="#section3">建築設計</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="section1" class="container-fluid">
+        <h1>遊記</h1>
+        <p>臭阿呆小隊十分半日成就80%遊</p></br>
+        <p><a class="btn-more" href="travel.html" role="button">more...</a></p>
+    <div class="pic"><img src="images/20170430_001.jpg" alt="" width="292px"></div>
+    <div class="pic"><img src="images/20170430_005.jpg" alt="" width="292px"></div>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>iPhone</h1>
+        <p>利用css寫出iphone的造型。</p>
+        <div class="iphone7a">
+        <div class="iphone7b">
+            <div class="line"></div>
+            <div class="iphone7c"></div>
+            <div class="dot01"></div>
+            <div class="dot02"></div>
+            <div class="phone"></div>
+            <div class="screen"><iframe src="http://may0801.github.io" width="240px" height="425px"></iframe></div>
+            <div class="click01"></div>
+            <div class="click02"></div>
+            <div class="icon01"></div>
+            <div class="icon02"></div>
+            <div class="icon03"></div>
+            <div class="icon04"></div>
+        </div>
+    </div>
+    </div>
+    <div id="section3" class="container-fluid">
+        <h1>建築設計</h1>
+        <p>建築設計課程的模型製作。</p>
+        <div class="container">
+            <!-- row star-->
+            <div class="row">
+                <!--col star-->
+                <div class="col-md-4 col-sm-8 col-xs-12 project">
+                    <div class="icon"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-d01"><img class="pic-left" src="images/d01-1.jpg" alt="" width="300px" >
+                    <h3>建築設計(一)part1<br>候車亭正模</h3></div>
+                </div>
+                <!--col end-->
+                                <!--col star-->
+                <div class="col-md-4 col-sm-8 col-xs-12 project">
+                    <div class="icon"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-d02"><img class="pic-left" src="images/d01-2.jpg" alt="" width="300px" >
+                    <h3>建築設計(一)Part2<br>三代宅(聚‧院)</h3></div>
+                </div>
+                <!--col end-->
+                                <!--col star-->
+                <div class="col-md-4 col-sm-8 col-xs-12 project">
+                    <div class="icon"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-d03"><img class="pic-left" src="images/d02-1.jpg" alt="" width="300px" >
+                    <h3>建築設計(二)Part1<br>品牌專賣店"SnowPeak"</h3></div>
+                </div>
+                                                <!--col star-->
+                <div class="col-md-4 col-sm-8 col-xs-12 project">
+                    <div class="icon"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-d03"><img class="pic-left" src="images/d02-2.jpg" alt="" width="300px" >
+                    <h3>建築設計(二)part2<br>齊東街設計師聚落</h3></div>
+                </div>
+                                                <!--col star-->
+                <div class="col-md-4 col-sm-8 col-xs-12 project">
+                    <div class="icon"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-d03"><img class="pic-left" src="images/d03-1.jpg" alt="" width="300px" >
+                    <h3>建築設計(三)part1<br>私人文物館</h3></div>
+                </div>
+                                                <!--col star-->
+                <div class="col-md-4 col-sm-8 col-xs-12 project">
+                    <div class="icon"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-d03"><img class="pic-left" src="images/d03-2.jpg" alt="" width="300px" >
+                        <h3>建築設計(三)part2<br>自宅工作室及咖啡廳</h3></div>
+                </div>
+                <!--col end-->
+
+
+            </div>
+            <!-- row end-->
+        </div>
+    </div>
 </body>
-
 </html>
